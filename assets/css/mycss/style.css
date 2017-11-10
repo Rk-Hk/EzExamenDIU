@@ -1,0 +1,97 @@
+
+body h1{
+    padding: 10px;
+    font-size: 35px;
+    color: #5d8e93;
+    text-transform: uppercase
+    
+}
+
+.content-main p{
+    font-style: italic;
+    padding: 30px 50px;
+}
+
+.content-main img{
+    width: 150px
+}
+
+.content-main button{
+    font-size: 14px;
+    width: 200px;
+    background: #5d8e93;
+    font-weight: bold;
+}
+
+.content-main button:hover{
+    background: #6da3a8;
+}
+
+.content-main{
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/*Para cuentas encontradas*/
+
+.content-empezar{
+    display: none;
+}
+
+.content-empezar ul{
+    list-style: none;
+}
+
+.content-empezar .empezar-icon{
+    padding: 5px 20px;
+    font-size: 30px;
+}
+.content-empezar .empezar-cuenta{
+    font-weight: bold;
+}
+
+.item-select{
+    display: flex;
+    background: #fff;
+    height: 60px;
+    border-bottom: 1px grey solid;
+}
+
+.title-item{
+    padding: 0 20px;
+}
+
+/**Home styles**/
+
+.navbar{
+    height: 50px;
+    background:  #5d8e93;
+    color: white;
+}
+
+.btn-sidebar{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.item-student img{
+    height: 80px;
+}
+
+.item-student{
+    padding: 20px;
+    display: flex;
+    height: 140px;
+    border-bottom: 1px grey solid;
+}
+
+.title-option{
+    color: dodgerblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.title-item p{
+    font-size: 14px;
+    text-align: justify;
+}
