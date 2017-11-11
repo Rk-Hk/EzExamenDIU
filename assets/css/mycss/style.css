@@ -7,6 +7,36 @@ body h1{
     
 }
 
+/**Load main*/
+
+.main-load{
+    -webkit-transition: background-color 2s ease-out, width 1s ease, box-shadow 1s linear;
+    transition:all 0.3s ease;
+    width: 100%;
+    background: #223344;
+    height: 100%;
+    position: absolute;
+}
+
+.main-load img{
+    width: 100%;
+}
+
+.load-title{
+    font-size: 30px;
+    color: #e1e2e1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.load-title  .title-ez{
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+/**Container main**/
+
 .content-main p{
     font-style: italic;
     padding: 30px 50px;
@@ -28,15 +58,18 @@ body h1{
 }
 
 .content-main{
+    -webkit-transition: background-color 2s ease-out, width 1s ease, box-shadow 1s linear;
+    transition:all 0.3s ease;
     margin-top: 100px;
     text-align: center;
+    display: none;
 }
 
 
 /*Para cuentas encontradas*/
 
 .content-empezar{
-    display: none;
+    
 }
 
 .content-empezar ul{
@@ -47,6 +80,7 @@ body h1{
     padding: 5px 20px;
     font-size: 30px;
 }
+
 .content-empezar .empezar-cuenta{
     font-weight: bold;
 }
@@ -68,6 +102,11 @@ body h1{
     height: 50px;
     background:  #5d8e93;
     color: white;
+}
+
+.navbar span{
+    padding-left: 15px;
+    font-size: 18px;
 }
 
 .btn-sidebar{
@@ -94,4 +133,163 @@ body h1{
 .title-item p{
     font-size: 14px;
     text-align: justify;
+}
+
+/**Estilos para videotutoriales*/
+
+.item-course{
+    padding: 10px;
+    border-bottom: #b2b2b2 solid 1px;
+}
+
+.item-course span{
+    padding-left: 20px;
+    font-size: 20px;
+    color: dodgerblue;
+}
+
+.header-videotutorial{
+    padding: 5px;
+    position: relative;
+}
+
+.header-videotutorial input{
+    height: 38px
+}
+
+.header-videotutorial button{
+    position: absolute;
+    height: 40px;
+    top: 4px;
+    z-index: 2;
+    right: 5px;
+    background: #fff;
+}
+
+/**Login and sing up**/
+
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto ;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+.form .thumbnail {
+  background: #5d8e93;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 25px 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
+}
+
+.form .thumbnail img {
+  display: block;
+  width: 100%;
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  outline: 0;
+  background: #6da3a8;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+    
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 15px;
+    font-family: sans-serif;
+}
+.form .message a {
+  color: #6da3a8;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #6da3a8;
+}
+.social-icon{
+    margin-top: 20px;
+    height: 40px;
+}
+
+.social-icon ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.social-icon li{
+    margin: 10px;
+}
+.social-icon li:hover{
+    width: 34px;
+    box-shadow: grey 2px;
 }
