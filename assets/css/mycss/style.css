@@ -21,6 +21,7 @@ body h1{
     display: none;
     font-size: 14px;
     color: dodgerblue;
+    z-index: 1000;
 }
 
 .sidebar-head{
@@ -111,10 +112,6 @@ body h1{
 
 /*Para cuentas encontradas*/
 
-.content-empezar{
-    
-}
-
 .content-empezar ul{
     list-style: none;
 }
@@ -145,6 +142,8 @@ body h1{
     height: 50px;
     background:  #5d8e93;
     color: white;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar span{
