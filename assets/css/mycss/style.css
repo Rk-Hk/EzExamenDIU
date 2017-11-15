@@ -7,6 +7,10 @@ body h1{
     
 }
 
+ul{
+	list-style: none;
+}
+
 .ocultar{
     display: none;
 }
@@ -408,6 +412,36 @@ body h1{
 	text-align: center;
 }
 
+
+/**Lista de temas x curso**/
+.temas-curso{
+	padding: 0px;
+}
+
+.temas-curso ul{
+	margin: 0 15px;
+	padding: 0;
+}
+
+.temas-curso li{
+	padding: 10px 0px 10px 35px;
+	background: url(../../img/jewels.png) no-repeat;
+	background-position:0px 50%;
+	border-bottom: #b2b2b2 solid 1px;
+	
+}
+
+.titulo-video{
+	padding: 10px;
+	font-size: 18px;
+	color: dimgrey;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+}
+
+.titulo-video .description{
+	font-size: 15px;
+}
 
 
 

@@ -59,7 +59,6 @@ $(document).ready(function () {
 				myFunction("No hay información del curso");
 				break;
 		}
-		alert(curso_selecc);
 		window.location = "temasxCurso.html";
 	});
 
@@ -89,9 +88,25 @@ $(document).ready(function () {
 			window.location = "tutorias.html";
 		}
 	});
+	
+	/**lista Temas x curso**/
+	$(".btn-cursos").on("click", function () {
 
+		window.location = "videotutoriales.html";
+	});
+	$(".btn-temas").on("click", function () {
 
+		window.location = "temasxCurso.html";
+	});
+	$(".tema-1").on("click", function () {
 
+		window.location = "cargarVideo.html";
+	});
+	
+
+	
+	
+	
 	/**Otras acciones de israel creo :V */
 
 	$(".content-main button").on("click", function () {
