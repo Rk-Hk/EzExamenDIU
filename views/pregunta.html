@@ -5,17 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous"> -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../assets/css/mycss/style.css">
+    crossorigin="anonymous"></script> -->
   <link rel="stylesheet" href="../assets/css/mycss/examenes.css">
 
   <title>Document</title>
@@ -23,47 +22,52 @@
 
 <body>
   <div class="navbar">
-    <div class="btn-sidebar">
-      <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+    <div class="btn-back">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
     </div>
+    <P>UNMSM</P>
   </div>
 
-  <div class="container-pregunta">
-    <header>
-
-    </header>
-    <section>
-      <h2></h2>
+  <div class="container-pregunta contenedor">
+    <div class="marcador-pregunta">
+      <p>1/20</p>
+      <p>
+        <i class="fa fa-clock-o" aria-hidden="true"></i>00:00:00
+      </p>
+    </div>
+    <section class="pregunta">
+      <h2>Habilidad Verbal</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima incidunt adipisci eveniet saepe possimus delectus repudiandae
         ullam porro ipsam, eius aspernatur itaque. Explicabo at magni, eum consequatur dolores similique aliquam.</p>
 
-      <form action="">
+      <ul>
 
-        <div class="item-pregunta">
+        <li class="item-pregunta">
           <input type="radio" id="pregunta" name="pregunta" value="">
           <label class="pregunta" for="pregunta">Lorem ipsum dolor sit amet</label>
-        </div>
-        <div class="item-pregunta">
-          <input type="radio" id="pregunta" name="pregunta" value="">
-          <label class="pregunta" for="pregunta">Lorem ipsum dolor sit amet</label>
-        </div>
-        <div class="item-pregunta">
-          <input type="radio" id="pregunta" name="pregunta" value="">
-          <label class="pregunta" for="pregunta">Lorem ipsum dolor sit amet</label>
-        </div>
-        <div class="item-pregunta">
-          <input type="radio" id="pregunta" name="pregunta" value="">
-          <label class="pregunta" for="pregunta">Lorem ipsum dolor sit amet</label>
-        </div>
-        <div class="item-pregunta">
-          <input type="radio" id="pregunta" name="pregunta" value="">
-          <label class="pregunta" for="pregunta">Lorem ipsum dolor sit amet</label>
-        </div>
+        </li>
+        <li class="item-pregunta">
+          <input type="radio" id="pregunta1" name="pregunta" value="">
+          <label class="pregunta" for="pregunta1">Lorem ipsum dolor sit amet</label>
+        </li>
+        <li class="item-pregunta">
+          <input type="radio" id="pregunta2" name="pregunta" value="">
+          <label class="pregunta" for="pregunta2">Lorem ipsum dolor sit amet</label>
+        </li>
+        <li class="item-pregunta">
+          <input type="radio" id="pregunta3" name="pregunta" value="">
+          <label class="pregunta" for="pregunta3">Lorem ipsum dolor sit amet</label>
+        </li>
+        <li class="item-pregunta">
+          <input type="radio" id="pregunta4" name="pregunta" value="">
+          <label class="pregunta" for="pregunta4">Lorem ipsum dolor sit amet</label>
+        </li>
 
+      </ul>
+      <div class="btn-decision">
         <button class="btn-responder" id="btn-responder">Responder</button>
         <button class="btn-siguiente" id="btn-siguiente">Siguiente</button>
-
-      </form>
+      </div>
     </section>
   </div>
 

@@ -1,0 +1,149 @@
+$(document).ready(function() {
+    function e(e) {
+        var r = "";
+        return e = $.trim(e), -1 < e.indexOf("youtube.com/") ? (r = /v\=[a-zA-Z0-9\-\_]{11}/.exec(e)) && (r = r.toString().substr(2)) : -1 < e.indexOf("youtu.be/") && (r = /\/[a-zA-Z0-9\-\_]{11}/.exec(e)) && (r = r.toString().substr(1)), null != r && 11 == r.length && r
+    }
+
+    function r(e) {
+        $("#converter_wrapper").before('<div id="error"><span>' + e + '</span><span><a href="">Intenta convertir otro video de YouTube haciendo clic aquí.</a></span></div><div id="pa_download"><a href="" rel="nofollow" target="_blank">Download</a></div>'), $("#converter_wrapper").remove(), $("#error").show(), $("#pa_download").show()
+    }
+
+    function o(e, r, o, t) {
+        s && $("#dropbox").show(), $("#progress").hide(), $("#notes").show(), $("#download #file").attr("href", "https://" + h[o] + ".ymcdn.cc/" + t + "/" + e), $("#download").show(), $("#pa_download").show()
+    }
+
+    function t(e, a, n) {
+        $.ajax({
+            url: "https://d.ymcdn.cc/progress.php",
+            data: {
+                id: n
+            },
+            dataType: "jsonp",
+            success: function(s) {
+                if ($.each(s, function(e, r) {
+                        s[e] = "hash" == e ? r : parseInt(r)
+                    }), 0 < s.error) return r(f.ct[s.error]), $.ajax({
+                    url: "error.php",
+                    async: !1,
+                    cache: !1,
+                    data: {
+                        f: 2,
+                        e: s.error,
+                        s: s.sid,
+                        v: e,
+                        h: n
+                    },
+                    type: "POST"
+                }), !1;
+                switch (s.progress) {
+                    case 0:
+                    case 1:
+                    case 2:
+                        $("#progress span").html(l[s.progress]);
+                        break;
+                    case 3:
+                        c = !0, o(e, a, s.sid, n)
+                }
+                c || window.setTimeout(function() {
+                    t(e, a, n)
+                }, 3e3)
+            }
+        })
+    }
+
+    function a(e, a) {
+        $.ajax({
+            url: "https://lagubr.com/api/check.php",
+            data: {
+                v: e,
+                f: a
+            },
+            dataType: "jsonp",
+            success: function(n) {
+                if ($.each(n, function(e, r) {
+                        n[e] = "hash" == e || "title" == e ? r : parseInt(r)
+                    }), 0 < n.error) return r(f.ck[n.error]), $.ajax({
+                    url: "error.php",
+                    async: !1,
+                    cache: !1,
+                    data: {
+                        f: 1,
+                        e: n.error,
+                        s: "/",
+                        v: e,
+                        h: n.hash
+                    },
+                    type: "POST"
+                }), !1;
+                0 < n.title.length ? $("#title").html(n.title) : $("#title").html("no title"), 0 < n.ce ? o(e, a, n.sid, n.hash) : t(e, a, n.hash)
+            }
+        })
+    }
+    var n = !1,
+        c = !1,
+        s = !1,
+        i = ["Ingresa una URL de video de YouTube.", "Se ha producido un error de parámetro. Se canceló la conversión. Elimine la caché del navegador y vuelva a intentarlo.", "Se ha producido un error de equilibrio. Se canceló la conversión. Actualice la página y vuelva a intentarlo.", "El video de youtube que intenta convertir está en la lista negra debido a una solicitud de DMCA. Intenta convertir otro video.", "Se ha producido un error de conversión. Se canceló la conversión. Actualice la página y vuelva a intentarlo.", "Se ha producido un error de descarga. Se canceló la conversión. Actualice la página y vuelva a intentarlo.", "No se pudo descargar el video debido a la restricción de edad. No podemos convertir ni descargar videos con restricciones de edad. Intenta convertir otro video.", "Lo sentimos. El video seleccionado dura más de 2 horas. Sólo podemos convertir videos con una duración de hasta 2 horas (120 minutos).", "Se ha producido un error en la base de datos. Se canceló la conversión. Actualice la página y vuelva a intentarlo."],
+        d = "mp3",
+        p = !1,
+        l = ["comprobación de video", "cargando video", "convirtiendo video"],
+        h = {
+            1: "odg",
+            2: "ado",
+            3: "jld",
+            4: "tzg",
+            5: "uuj",
+            6: "bkl",
+            7: "fnw",
+            8: "eeq",
+            9: "ebr",
+            10: "asx",
+            11: "ghn",
+            12: "eal",
+            13: "hrh",
+            14: "quq",
+            15: "zki",
+            16: "tff",
+            17: "aol",
+            18: "eeu",
+            19: "kkr",
+            20: "yui",
+            21: "yyd",
+            22: "hdi",
+            23: "ddb",
+            24: "iir",
+            25: "ihi",
+            26: "heh",
+            27: "xaa",
+            28: "nim",
+            29: "omp",
+            30: "eez",
+            31: "rpx",
+            32: "cxq",
+            33: "typ",
+            34: "amv",
+            35: "rlv",
+            36: "xnx"
+        },
+        u = "",
+        f = {
+            ck: {
+                1: i[1],
+                2: i[2],
+                3: i[3]
+            },
+            ct: {
+                1: i[4],
+                3: i[5],
+                7: i[4],
+                9: i[6],
+                11: i[7],
+                100: i[8]
+            }
+        };
+
+var valtube = "https://youtu.be/" + idquery;
+
+    $("#submit").click(function() {
+        return (u = e(valtube)) ? (n = !0, $("#submit").hide(), $("#progress").show(), a(u, d), !1) : ($("#input").val(i[0]), !1)
+    })
+});

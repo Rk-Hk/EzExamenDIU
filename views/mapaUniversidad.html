@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous"> -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../assets/css/mycss/style.css">
+    crossorigin="anonymous"></script> -->
+  
   <link rel="stylesheet" href="../assets/css/mycss/examenes.css">
 
   <title>Document</title>
@@ -24,55 +24,62 @@
 <body>
   <div class="navbar">
     <div class="btn-sidebar">
-      <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
     </div>
+    <P>UNMSM</P>
   </div>
 
-  <div class="container-mapa">
+  <div class="container-mapa contenedor">
+    <div class="imagen-mapa">
+      <img src="../assets/img/campus/sm.jpg" alt="campus san marcos" usemap="#campus-sm">
 
-    <img src="../assets/img/campus/sm.jpg" alt="campus san marcos" usemap="#campus-sm">
-
-    <map id="campus-sm" name="campus-sm">
-      <area shape="poly" alt="Biología" title="" coords="538,61,614,67,640,191,557,207,517,235,501,226,511,209,517,155,530,140,532,127,536,75,538,64"
-        href="#" target="" />
-      <area shape="poly" alt="Química" title="" coords="297,35,366,41,363,119,342,117,307,175,277,168,286,140,287,132" href="#"
-        target="" />
-      <area shape="poly" alt="Fisica" title="" coords="218,24,293,32,283,140,260,143,179,97,177,58,215,28" href="#"
-        target="" />
-      <area shape="poly" alt="Trigonometría" title="" coords="368,112,454,122,448,199,425,231,395,227,305,184,343,120,364,122"
-        href="#" target="" />
-      <area shape="poly" alt="Geometría" title="" coords="274,149,228,236,128,177,176,100,256,146,274,146" href="#"
-        target="" />
-      <area shape="poly" alt="Álgebra" title="" coords="104,43,137,37,174,54,174,97,126,175,76,145,71,107,77,79,87,69" href="#"
-        target="" />
-      <area shape="poly" alt="Raz. Mat." title="" coords="88,188,101,260,212,238,174,213,94,165" href="#" target=""
-      />
-      <area shape="poly" alt="Raz. Verbal" title="" coords="102,265,220,241,215,272,197,288,207,329,205,352,114,362,120,338,108,322"
-        href="#" target="" />
-      <area shape="poly" alt="Economía" title="" coords="117,368,237,351,203,381,214,452,143,469" href="#" target=""
-      />
-      <area shape="poly" alt="Filosofía" title="" coords="300,392,392,348,418,368,377,435,352,459,318,482,300,412" href="#"
-        target="" />
-      <area shape="poly" alt="Goegrafiía" title="" coords="375,269,389,310,368,355,391,345,419,364,462,283,404,250,388,250" href="#"
-        target="" />
-      <area shape="poly" alt="Lenguaje" title="" coords="274,185,320,203,370,224,387,246,367,272,335,249,291,247,246,257,235,233,264,192"
-        href="#" target="" />
-      <area shape="poly" alt="Hist. del Perú" title="" coords="372,48,369,108,527,129,535,60" href="#" target="" />
-      <area shape="poly" alt="Hist. Universal" title="" coords="459,131,453,200,416,249,479,282,507,237,497,228,507,203,515,134"
-        href="#" target="" />
-      <area shape="poly" alt="Educ. Cívica" title="" coords="309,485,291,382,232,362,207,381,224,502,271,497" href="#"
-        target="" />
-      <area shape="poly" alt="Literatura" title="" coords="261,273,238,284,231,303,230,320,234,343,249,355,271,364,302,369,331,368,354,359,372,331,374,306,365,287,344,275,314,260,298,260,274,260,269,265"
-        href="#" target="" />
-    </map>
-
-    <div>
-
+      <map id="campus-sm" name="campus-sm">
+        <area shape="poly" alt="Biología" title="" coords="538,61,614,67,640,191,557,207,517,235,501,226,511,209,517,155,530,140,532,127,536,75,538,64"
+          href="#" target="" />
+        <area shape="poly" alt="Química" title="" coords="297,35,366,41,363,119,342,117,307,175,277,168,286,140,287,132" href="#"
+          target="" />
+        <area shape="poly" alt="Fisica" title="" coords="218,24,293,32,283,140,260,143,179,97,177,58,215,28" href="#" target="" />
+        <area shape="poly" alt="Trigonometría" title="" coords="368,112,454,122,448,199,425,231,395,227,305,184,343,120,364,122"
+          href="#" target="" />
+        <area shape="poly" alt="Geometría" title="" coords="274,149,228,236,128,177,176,100,256,146,274,146" href="#" target="" />
+        <area shape="poly" alt="Álgebra" title="" coords="104,43,137,37,174,54,174,97,126,175,76,145,71,107,77,79,87,69" href="#"
+          target="" />
+        <area shape="poly" alt="Raz. Mat." title="" coords="88,188,101,260,212,238,174,213,94,165" href="#" target="" />
+        <area shape="poly" alt="Raz. Verbal" title="" coords="102,265,220,241,215,272,197,288,207,329,205,352,114,362,120,338,108,322"
+          href="#" target="" />
+        <area shape="poly" alt="Economía" title="" coords="117,368,237,351,203,381,214,452,143,469" href="#" target="" />
+        <area shape="poly" alt="Filosofía" title="" coords="300,392,392,348,418,368,377,435,352,459,318,482,300,412" href="#" target=""
+        />
+        <area shape="poly" alt="Goegrafiía" title="" coords="375,269,389,310,368,355,391,345,419,364,462,283,404,250,388,250" href="#"
+          target="" />
+        <area shape="poly" alt="Lenguaje" title="" coords="274,185,320,203,370,224,387,246,367,272,335,249,291,247,246,257,235,233,264,192"
+          href="#" target="" />
+        <area shape="poly" alt="Hist. del Perú" title="" coords="372,48,369,108,527,129,535,60" href="#" target="" />
+        <area shape="poly" alt="Hist. Universal" title="" coords="459,131,453,200,416,249,479,282,507,237,497,228,507,203,515,134"
+          href="#" target="" />
+        <area shape="poly" alt="Educ. Cívica" title="" coords="309,485,291,382,232,362,207,381,224,502,271,497" href="#" target=""
+        />
+        <area shape="poly" alt="Literatura" title="" coords="261,273,238,284,231,303,230,320,234,343,249,355,271,364,302,369,331,368,354,359,372,331,374,306,365,287,344,275,314,260,298,260,274,260,269,265"
+          href="#" target="" />
+      </map>
     </div>
 
-    <div>
+    <div class="cuadro-mapa">
+      <div class="marcador-total">
+        <p>Total resueltas: 0/100</p>
+        <p>
+          <i class="fa fa-clock-o" aria-hidden="true"></i>00:00:00</p>
+      </div>
 
+      <div class="cuadro-resolver">
+        <div class="marcador-curso">
+          <p>Habilidad Matematica</p>
+          <p>0/20 Resuletas</p>
+        </div>
+        <button class="resolver-area">Resolver</button>
+      </div>
     </div>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -83,7 +90,8 @@
 
   <script>
     $("img[usemap]").rwdImageMaps();
-    $("img[usemap]").maphilight();
+    setTimeout(() => { $("img[usemap]").maphilight(); }, 1000);
+
   </script>
 </body>
 

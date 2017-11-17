@@ -1,5 +1,5 @@
 
-body h1{
+h1{
     padding: 10px;
     font-size: 35px;
     color: #5d8e93;
@@ -17,7 +17,7 @@ ul{
 
 /** Sidebar **/
 
-.sidebar{
+/* .sidebar{
     width: 250px;
     height: 100%;
     position: fixed;
@@ -53,7 +53,7 @@ ul{
 
 .sidebar p{
     margin: 0;
-}
+} */
 
 /**Load main*/
 
@@ -116,7 +116,7 @@ ul{
 
 /**Home styles**/
 
-.navbar{
+/* .navbar{
     height: 50px;
     background:  #5d8e93;
     color: white;
@@ -131,7 +131,7 @@ ul{
 .btn-sidebar{
     font-size: 25px;
     padding: 10px;
-}
+} */
 
 .item-student img{
     height: 80px;
