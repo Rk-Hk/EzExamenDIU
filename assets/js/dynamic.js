@@ -95,6 +95,18 @@ $(document).ready(function() {
       window.location = "tutorias.html";
     }
   });
+	
+	$(".like").on("click", function(){
+		$(this).attr("src","../../assets/img/like-yes.png");
+	});
+	$(".comment").on("click", function(){
+		$(".content-comment").fadeIn();
+	});
+	
+	$(".btn-comment").on("click", function(){
+		$(".modal").fadeOut();
+	});
+	
 
   /**lista Temas x curso**/
   $(".btn-cursos").on("click", function() {
