@@ -1,0 +1,470 @@
+
+h1{
+    padding: 10px;
+    font-size: 35px;
+    color: #5d8e93;
+    text-transform: uppercase
+    
+}
+
+ul{
+	list-style: none;
+}
+
+.ocultar{
+    display: none;
+}
+
+/**Load main*/
+
+.main-load{
+    -webkit-transition: background-color 2s ease-out, width 1s ease, box-shadow 1s linear;
+    transition:all 0.3s ease;
+    width: 100%;
+    background: #223344;
+    height: 100%;
+    position: absolute;
+}
+
+.main-load img{
+    width: 100%;
+}
+
+.load-title{
+    font-size: 30px;
+    color: #e1e2e1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.load-title  .title-ez{
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+/**Container main**/
+
+.content-main p{
+    font-style: italic;
+    padding: 30px 50px;
+}
+
+.content-main img{
+    width: 150px
+}
+
+.content-main button{
+    font-size: 14px;
+    width: 200px;
+    background: #5d8e93;
+    font-weight: bold;
+}
+
+.content-main button:hover{
+    background: #6da3a8;
+}
+
+.content-main{
+    -webkit-transition: background-color 2s ease-out, width 1s ease, box-shadow 1s linear;
+    transition:all 0.3s ease;
+    margin-top: 100px;
+    text-align: center;
+    display: none;
+}
+
+.item-student img{
+    height: 80px;
+	margin-right: 15px;
+}
+
+
+.item-student{
+    padding: 20px;
+    display: flex;
+    height: 140px;
+    border-bottom: 1px grey solid;
+}
+
+.title-option{
+    color: dodgerblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.title-item p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+/**Estilos para videotutoriales*/
+
+.item-course{
+    padding: 10px;
+    border-bottom: #b2b2b2 solid 1px;
+}
+
+.item-course span{
+    padding-left: 20px;
+    font-size: 20px;
+    color: dodgerblue;
+}
+
+.header-videotutorial{
+    padding: 5px;
+    position: relative;
+}
+
+.header-videotutorial input{
+    height: 38px
+}
+
+.header-videotutorial button{
+    position: absolute;
+    height: 40px;
+    top: 4px;
+    z-index: 2;
+    right: 5px;
+    background: #fff;
+}
+
+/**Login and sing up**/
+
+.form {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto ;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+.form .thumbnail {
+  background: #5d8e93;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 25px 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
+}
+
+.form .thumbnail img {
+  display: block;
+  width: 100%;
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  outline: 0;
+  background: #6da3a8;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 18px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+    
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 15px;
+    font-family: sans-serif;
+}
+.form .message a {
+  color: #6da3a8;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #6da3a8;
+}
+.social-icon{
+    margin-top: 20px;
+    height: 40px;
+}
+
+.social-icon ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.social-icon li{
+    margin: 10px;
+}
+.social-icon li:hover{
+    width: 34px;
+    box-shadow: grey 2px;
+}
+
+/**Rankinde tutores**/
+
+.info-tutor{
+	display: none;
+}
+
+.item-rank .rank-medal{
+	height: 64px;
+}
+
+.item-rank{
+    padding: 20px;
+    display: flex;
+    height: 100px;
+    border-bottom: 1px grey solid;
+	position: relative;
+}
+
+.solution-question table th{
+	color: #7c7c7c;
+	font-weight: 500;
+}
+
+.descripcion-tutor{
+	padding: 3px 20px;
+	text-align: justify;
+	color: #7c7c7c;
+}
+
+.item-rank img{
+	width: 64px;
+	border-radius: 50%;
+}
+
+.item-rank p{
+	margin-bottom: 4px;
+}
+
+.item-rank .tutor-verified{
+	position: absolute;
+	width: 25px;
+	bottom: 18px;
+	left: 60px;
+}
+
+
+
+.data-tutor{
+	padding: 10px;
+	display: flex;
+}
+
+.description-tutor{
+	margin-left: 10px;
+}
+.description-tutor p{
+	margin: 0;
+	color: grey;
+	padding-bottom: 5px;
+}
+
+.description-tutor img{
+	width: 20px; 
+}
+.description-tutor span{
+	color: green;
+}
+
+.modal .etiqueta-solucion{
+	margin: 10px 0 0;
+	color: dodgerblue;
+	text-transform: uppercase
+}
+.modal hr{
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+
+.content-comment{
+	display: none;
+	padding: 0 12px 0;
+}
+.modal .content-comment .btn{
+	margin-top: 5px;
+}
+
+
+.info-tutor .social-icon{
+	margin: 5px;
+	padding: 0 40px;
+}
+
+#exampleModalLongTitle{
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.modal-content .modal-body{
+	padding: 0px;
+}
+
+.solution-question .collapse .card-body{
+	padding: 0 10PX;;
+}
+
+.modal .modal-header{
+	color: dodgerblue;
+}
+.modal .modal-body{
+	padding: 12px;
+}
+
+.modal .modal-body img{
+	width: 100%;
+}
+
+.modal .modal-footer{
+	color: #949494;
+	font-size: 14px;
+}
+
+.modal .modal-footer div{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+/**Lista de temas x curso**/
+.temas-curso{
+	padding: 0px;
+}
+
+.temas-curso ul{
+	margin: 0 15px;
+	padding: 0;
+}
+
+.temas-curso li{
+	padding: 10px 0px 10px 35px;
+	background: url(../../img/jewels.png) no-repeat;
+	background-position:0px 50%;
+	border-bottom: #b2b2b2 solid 1px;
+	
+}
+
+.titulo-video{
+	padding: 10px;
+	font-size: 18px;
+	color: dimgrey;
+	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+}
+
+.titulo-video .description{
+	font-size: 15px;
+}
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+/**Sacados de bootstrap***/
+.form-control{display:block;width:100%;padding:.375rem .75rem;font-size:1rem;line-height:1.5;color:#495057;background-color:#fff;background-image:none;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}
+
+.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn:focus,.btn:hover{text-decoration:none}.btn.focus,.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.btn.disabled,.btn:disabled{opacity:.65}.btn:not([disabled]):not(.disabled).active,.btn:not([disabled]):not(.disabled):active{background-image:none}
+
+.btn-outline-success{color:#28a745;background-color:transparent;background-image:none;border-color:#28a745}.btn-outline-success:hover{color:#fff;background-color:#28a745;border-color:#28a745}.btn-outline-success.focus,.btn-outline-success:focus{box-shadow:0 0 0 .2rem rgba(40,167,69,.5)}.btn-outline-success.disabled,.btn-outline-success:disabled{color:#28a745;background-color:transparent}

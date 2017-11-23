@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/mycss/style.css">
+</head>
+
+<body class="body">
+
+    <div class="container">
+    </div>
+    <div class="form">
+        <div class="thumbnail"><img src="../../img/logo.jpeg" /></div>
+        <form class="register-form">
+            <input class="register-name" type="text" placeholder="nombre" />
+            <input class="register-apell" type="text" placeholder="apelldio" />
+            
+            <input class="register-email" type="email" placeholder="correo" />
+            <input class="register-pass" type="password" placeholder="contraseña" />
+            <button id="btn-register" >Registrarse</button>
+            <p class="message">¿Tienes cuenta? <a href="#">Inicia sesion</a></p>
+        </form>
+        <form class="login-form">
+            <input class="login-email" type="email" placeholder="correo" />
+            <input class="login-pass" type="password" placeholder="contraseña" />
+            <button type="button" id="btn-login">Iniciar sesion</button>
+            <p class="message">¿No tienes cuenta? <a href="#">Registrate aquí</a></p>
+            
+            <div class="social-icon">
+                <ul>
+                    <li><a href="#"><img src="../../img/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="../../img/google-plus.png" alt=""></a></li>
+                    <li><a href="#"><img src="../../img/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="../../img/linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    
+    <div id="snackbar"></div>
+
+    <script src="../../js/login.js"></script>
+    <script src="../../js/dynamic.js"></script>
+
+
+</body>
+</html>
