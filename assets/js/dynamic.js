@@ -70,6 +70,24 @@ $(document).ready(function() {
     window.location = "temasxCurso.html";
   });
 
+
+
+  $(".menu-examenes").on("click", function() {
+    window.location = "modo.html";
+  });
+  $(".menu-ranking").on("click", function() {
+    window.location = "ranking.html";
+  });
+  $(".menu-tutorias").on("click", function() {
+    window.location = "option-tutoria/tutorias.html";
+  });
+  $(".menu-video").on("click", function() {
+    window.location = "option-videotutoriales/videotutoriales.html";
+  });
+  $(".menu-cerrar").on("click", function() {
+    window.location = "";
+  });
+
   /*acciones para tutoria*/
 
   $(".ranking-tutor").on("click", function() {
