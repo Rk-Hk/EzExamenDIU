@@ -333,6 +333,17 @@ ul{
 	position: relative;
 }
 
+.solution-question table th{
+	color: #7c7c7c;
+	font-weight: 500;
+}
+
+.descripcion-tutor{
+	padding: 3px 20px;
+	text-align: justify;
+	color: #7c7c7c;
+}
+
 .item-rank img{
 	width: 64px;
 	border-radius: 50%;
@@ -372,6 +383,25 @@ ul{
 	color: green;
 }
 
+.modal .etiqueta-solucion{
+	margin: 10px 0 0;
+	color: dodgerblue;
+	text-transform: uppercase
+}
+.modal hr{
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+
+.content-comment{
+	display: none;
+	padding: 0 12px 0;
+}
+.modal .content-comment .btn{
+	margin-top: 5px;
+}
+
+
 .info-tutor .social-icon{
 	margin: 5px;
 	padding: 0 40px;
@@ -394,7 +424,7 @@ ul{
 	color: dodgerblue;
 }
 .modal .modal-body{
-	padding: 5px;
+	padding: 12px;
 }
 
 .modal .modal-body img{
