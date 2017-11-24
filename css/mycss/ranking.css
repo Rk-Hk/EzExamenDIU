@@ -1,44 +1,105 @@
-$swipe-tab-color: #757575;
-$swipe-active-tab-color: #000;
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+    
+  .sub-header{
 
+  }
+  .sub-header img{
+    width: 100%;
+    height: 20vh;
+    display: block;
+  }
+  
 
-.slick-initialized {
-  .swipe-tab-content {
-    position: relative;
-    min-height: 365px;
-
-    @media screen and (min-width: 767px) {
-      min-height: 500px;
-    }
+  .swipe-tabs{
+    text-align: center;
+    background: #f1f1f1;
   }
 
   .swipe-tab {
+    width: 33%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
+    padding: 20px;
     background: none;
     border: 0;
-    color: $swipe-tab-color;
+    color: #757575;
     cursor: pointer;
-    text-align: center;
-    border-bottom: 2px solid rgba($swipe-active-tab-color, 0);
+    border-bottom: 2px solid transparent;
     transition: all 0.5s;
-
-    .swipe-tab:hover {
-      color: $swipe-active-tab-color;
-    }
-
-    .swipe-tab.active-tab {
-      border-bottom-color: $swipe-active-tab-color;
-      color: $swipe-active-tab-color;
+  }
+  .active-tab {
+      border-bottom-color: #000;
+      color: #000;
       font-weight: bold;
     }
 
+.main-container {
+  
+  padding: 25px;
+}
+
+.item-usuario{
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(202, 202, 196);
+}
+.item-usuario .numero{
+  color: #5d8e93;
+  font-weight: bold;
+}
+
+.item-usuario .cantidad{
+  color: rgb(150, 150, 146);
+  font-weight: bold;
+}
+
+.item-usuario figure{
+  display: flex;
+  align-items: center;
+}
+
+.item-usuario figcaption{
+  margin-left: 20px;
+}
+
+.item-usuario figure .imagen-usuario{
+  border-radius: 50%;
+  width: 50px;
+}
+
+.item-usuario .datos{
+  margin-left: 25px;
+}
+.trofeos{
+  margin-top: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.trofeos div{
+  text-align: center;
+
+}
+
+.trofeos div p{
+  margin-top: 5px;
+}
+.swipe-tab-content {
+  position: relative;
+  min-height: 365px;
+}
+
+@media screen and (min-width: 767px) {
+  .swipe-tab-content {
+    min-height: 500px;
   }
 }
 
-.main-container {
-  padding: 25px;
-  background: #f1f1f1;
-}
+
