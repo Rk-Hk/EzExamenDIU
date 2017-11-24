@@ -27,7 +27,7 @@ $(document).ready(function() {
     window.location = "examenes/modo.html";
   });
   $(".ranking-option").on("click", function() {
-    
+    window.location = "ranking/ranking.html"
   });
   $(".tutoria-option").on("click", function() {
     window.location = "tutorias/tutorias.html";
