@@ -89,11 +89,14 @@ ul{
 .title-option{
     color: dodgerblue;
     text-transform: uppercase;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 .title-item p{
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 16px;
     text-align: justify;
+    line-height: 1.5;
 }
 
 /**Estilos para videotutoriales*/

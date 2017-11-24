@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/mycss/style.css">
+  <link rel="stylesheet" href="../../css/mycss/examenes.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="btn-sidebar" data-toggle="modal" data-target="#exampleModal">
+      <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </div>
+    <P>UNMSM</P>
+  </div>
+
+  <div class="container-mapa contenedor">
+    <div class="imagen-mapa">
+      <img src="../../img/examenes/campus/sm.jpg" alt="campus san marcos" usemap="#campus-sm">
+
+      <map id="campus-sm" name="campus-sm">
+        <area shape="poly" alt="" title="" coords="61,29,96,22,131,41,135,90,90,164,30,133,26,80,32,71" href="#" target="" />
+        <area shape="poly" alt="" title="" coords="138,43,179,12,246,24,237,128,213,131,138,89" href="#" target="" />
+        <area shape="poly" alt="" title="" coords="186,216,231,134,213,136,136,96,93,167" href="#" target="" />
+        <area shape="poly" alt="" title="" coords="257,28,248,130,236,153,265,165,300,97,319,94,321,34" href="#" target=""
+        />
+        <area shape="poly" alt="" title="" coords="332,37,487,49,483,118,330,94" href="#" target="" />
+        <area shape="poly" alt="" title="" coords="494,56,490,134,475,149,467,219,526,188,589,174,567,63" href="#" target=""
+        />
+        <area shape="poly" alt="" title="" coords="408,122,401,183,368,230,426,261,462,195,476,122,476,122" href="#" target=""
+        />
+        <area shape="poly" alt="" title="" coords="363,226,392,180,403,108,300,108,269,166" href="#" target="" />
+        <area shape="poly" alt="" title="" coords="49,189,61,251,158,225,61,171" href="#" target="" />
+        <area shape="poly" alt="" title="" coords="198,267,223,249,255,246,283,252,300,265,318,282,328,309,319,335,298,351,273,359,235,358,206,352,180,335,176,309,185,278"
+          href="#" target="" />
+        <area shape="poly" alt="" title="" coords="191,239,227,168,349,233,327,258,270,235,231,233,195,247" href="#" target=""
+        />
+        <area shape="poly" alt="" title="" coords="253,383,277,467,325,433,370,354,347,338,296,372" href="#" target="" />
+        <area shape="poly" alt="" title="" coords="64,260,83,343,163,327,152,271,169,252,160,232" href="#" target="" />
+        <area shape="poly" alt="" title="" coords="74,358,103,451,174,436,154,365,174,343,161,332,89,347" href="#" target=""
+        />
+        <area shape="poly" alt="" title="" coords="178,410,195,480,269,467,247,399,243,367,196,362,173,379" href="#" target=""
+        />
+        <area shape="poly" alt="" title="" coords="335,262,346,295,344,326,376,348,418,278,366,245,346,241" href="#" target=""
+        />
+        <!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
+      </map>
+    </div>
+
+    <div class="cuadro-mapa">
+      <div class="marcador-total">
+        <p>Total resueltas: 0/100</p>
+        <p>
+          <i class="fa fa-clock-o" aria-hidden="true"></i>00:00:00</p>
+      </div>
+
+      <div class="cuadro-resolver">
+        <div class="marcador-curso">
+          <p>Habilidad Matematica</p>
+          <p>0/20 Resuletas</p>
+        </div>
+        <button class="resolver-area">Resolver</button>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¿Salir del examen?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Se perderá todo su progreso
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Si</button>
+            <button type="button" class="btn btn-primary">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/jquery.rwdImageMaps.min.js"></script>
+  <script src="../../js/jquery.maphilight.min.js"></script>
+  <script src="../../js/bootstrap/popper.min.js"></script>
+  <script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+  <script src="../../js/dynamic.js"></script>
+
+  <script>
+    $("img[usemap]").rwdImageMaps();
+    setTimeout(() => { $("img[usemap]").maphilight(); }, 1000);
+
+  </script>
+</body>
+
+</html>
