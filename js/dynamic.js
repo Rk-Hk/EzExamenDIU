@@ -178,8 +178,14 @@ $(document).ready(function () {
   });
 
 
-  $(".item-university").on("click", function () {
-    window.location = "listaExamenes.html";
+  $("#u-sm").on("click", function () {
+    window.location = "listaExamenesSM.html";
+  });
+  $("#u-uni").on("click", function () {
+    window.location = "listaExamenesUNI.html";
+  });
+  $("#u-pucp").on("click", function () {
+    window.location = "listaExamenesPucp.html";
   });
   $("#modo-option").on("click", function () {
     window.location = "universidades.html";
@@ -199,8 +205,14 @@ $(document).ready(function () {
   $(".container-examenes").on("click", function () {
     $("#sidebar").fadeOut();
   });
-  $("#empezarExamen").on("click", function () {
-    window.location = "mapaUniversidad.html";
+  $("#empezarExamen-sm").on("click", function () {
+    window.location = "mapaSM.html";
+  });
+  $("#empezarExamen-uni").on("click", function () {
+    window.location = "mapaUni.html";
+  });
+  $("#empezarExamen-pucp").on("click", function () {
+    window.location = "mapaPucp.html";
   });
 
   $(".contenedor").on("click", function () {
@@ -219,10 +231,10 @@ $(document).ready(function () {
     window.location = "mapaUniversidad.html";
   });
   $(".volver-home").on("click", function () {
-    window.location = "home.html";
+    window.location = "../home.html";
   });
   $(".volver-mapa").on("click", function () {
-    window.location = "mapaUniversidad.html";
+    window.location = "mapaSM.html";
   });
 	
 	$("#fst-fecha").datepicker();

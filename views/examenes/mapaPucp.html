@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/mycss/style.css">
+    <link rel="stylesheet" href="../../css/mycss/examenes.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="btn-sidebar" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
+        <P>UNI</P>
+    </div>
+
+    <div class="container-mapa contenedor">
+        <div class="imagen-mapa">
+            <img src="../../img/examenes/campus/pucp.jpg" alt="campus pucp" usemap="#campus-pucp">
+
+            <map id="campus-pucp" name="campus-pucp">
+                <area shape="poly" alt="" title="" coords="68,91,117,108,99,185,44,156" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="42,176,21,246,48,316,121,306,124,288,91,249,94,200" href="#" target=""
+                />
+                <area shape="poly" alt="" title="" coords="596,165,598,241,557,251,512,280,516,312,664,304,636,155" href="#"
+                    target="" />
+                <area shape="poly" alt="" title="" coords="136,117,101,241,146,295,211,306,213,255,181,202,202,130" href="#"
+                    target="" />
+                <area shape="poly" alt="" title="" coords="213,133,193,196,229,258,259,207,346,220,357,151" href="#" target=""
+                />
+                <area shape="poly" alt="" title="" coords="229,267,227,306,344,303,347,230,264,215" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="376,161,372,306,447,311,443,166" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="457,168,458,303,511,308,504,256,557,242,591,237,579,167" href="#"
+                    target="" />
+                <area shape="poly" alt="" title="" coords="299,322,298,409,447,415,443,331" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="464,332,464,417,523,417,517,326" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="672,443,710,425,680,308,627,325,643,399" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="531,325,535,423,663,446,627,391,618,323" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="197,329,187,401,279,416,276,320" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="28,350,14,395,177,411,188,323,106,320" href="#" target="" />
+                <!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
+            </map>
+        </div>
+
+        <div class="cuadro-mapa">
+            <div class="marcador-total">
+                <p>Total resueltas: 0/100</p>
+                <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>00:00:00</p>
+            </div>
+
+            <div class="cuadro-resolver">
+                <div class="marcador-curso">
+                    <p>Habilidad Matematica</p>
+                    <p>0/20 Resuletas</p>
+                </div>
+                <button class="resolver-area">Resolver</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">¿Salir del examen?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Se perderá todo su progreso
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Si</button>
+                        <button type="button" class="btn btn-primary">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../../js/jquery.maphilight.min.js"></script>
+    <script src="../../js/bootstrap/popper.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../../js/dynamic.js"></script>
+
+    <script>
+        $("img[usemap]").rwdImageMaps();
+        setTimeout(() => { $("img[usemap]").maphilight(); }, 1000);
+
+    </script>
+</body>
+
+</html>

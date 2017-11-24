@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/mycss/style.css">
+    <link rel="stylesheet" href="../../css/mycss/examenes.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="btn-sidebar" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
+        <P>UNI</P>
+    </div>
+
+    <div class="container-mapa contenedor">
+        <div class="imagen-mapa">
+            <img src="../../img/examenes/campus/uni.jpg" alt="campus uni" usemap="#campus-uni">
+
+            <map id="campus-uni" name="campus-uni">
+                <area shape="poly" alt="" title="" coords="19,864,261,867,267,1107,58,1103,54,1069" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="288,879,476,881,514,1087,469,1125,414,1145,347,1161,286,1178,288,1009"
+                    href="#" target="" />
+                <area shape="poly" alt="" title="" coords="286,773,449,707,481,867,287,862" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="519,881,697,881,742,841,832,848,824,1083,710,1110,622,1109,539,1087,519,961"
+                    href="#" target="" />
+                <area shape="poly" alt="" title="" coords="474,703,498,859,695,863,720,833,827,832,829,681,765,641,708,622,664,636"
+                    href="#" target="" />
+                <area shape="poly" alt="" title="" coords="847,694,1008,691,1019,839,847,831" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="1004,967,1008,1044,854,1067,852,854,1013,857,1013,945" href="#"
+                    target="" />
+                <area shape="poly" alt="" title="" coords="1032,859,1032,1035,1194,1015,1187,882,1207,861" href="#" target=""
+                />
+                <area shape="poly" alt="" title="" coords="1346,740,1433,820,1352,931,1312,971,1250,1001,1211,1010,1207,892"
+                    href="#" target="" />
+                <area shape="poly" alt="" title="" coords="1200,638,1212,735,1247,739,1260,803,1381,674,1445,598,1437,588,1286,583,1236,598"
+                    href="#" target="" />
+                <area shape="poly" alt="" title="" coords="1466,591,1492,591,1557,657,1443,812,1357,724" href="#" target=""
+                />
+                <area shape="poly" alt="" title="" coords="1433,400,1412,564,1553,569,1639,464,1572,396" href="#" target=""
+                />
+                <area shape="poly" alt="" title="" coords="1410,408,1397,569,1265,571,1182,630,1135,558,1385,409" href="#"
+                    target="" />
+                <area shape="poly" alt="" title="" coords="1031,565,1032,669,1123,670,1171,644,1136,574" href="#" target=""
+                />
+                <area shape="poly" alt="" title="" coords="732,558,735,615,836,669,1010,674,1010,551,947,545,750,539" href="#"
+                    target="" />
+                <area shape="poly" alt="" title="" coords="484,595,469,681,637,621,724,609,722,558,595,564" href="#" target=""
+                />
+                <area shape="poly" alt="" title="" coords="286,659,411,613,465,581,461,683,281,760" href="#" target="" />
+                <area shape="poly" alt="" title="" coords="1036,696,1032,834,1205,843,1193,678" href="#" target="" />
+                <!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
+            </map>
+        </div>
+
+        <div class="cuadro-mapa">
+            <div class="marcador-total">
+                <p>Total resueltas: 0/100</p>
+                <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>00:00:00</p>
+            </div>
+
+            <div class="cuadro-resolver">
+                <div class="marcador-curso">
+                    <p>Habilidad Matematica</p>
+                    <p>0/20 Resuletas</p>
+                </div>
+                <button class="resolver-area">Resolver</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">¿Salir del examen?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Se perderá todo su progreso
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Si</button>
+                        <button type="button" class="btn btn-primary">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.rwdImageMaps.min.js"></script>
+    <script src="../../js/jquery.maphilight.min.js"></script>
+    <script src="../../js/bootstrap/popper.min.js"></script>
+    <script src="../../js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../../js/dynamic.js"></script>
+
+    <script>
+        $("img[usemap]").rwdImageMaps();
+        setTimeout(() => { $("img[usemap]").maphilight(); }, 1000);
+
+    </script>
+</body>
+
+</html>
