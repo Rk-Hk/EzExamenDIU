@@ -1,10 +1,17 @@
+var _root = "";
+
+function obtenerRuta(){
+	_root = window.location.href.split("/index")[0];
+	console.log(_root);
+}
+
 $(document).ready(function() {
   var estadoSidebar = false;
-
   var _name = "Israel";
   var _apell = "Ruiz";
   var _password = "israel";
   var _email = "israel@gmail.com";
+
 
   var curso_selecc = "Algebra";
 
@@ -39,13 +46,13 @@ $(document).ready(function() {
 	/**	RUTAS DEL MENU LATERAL 	**/
 	$(".item-sidebar").click(function(e){
 		switch(e.target.id){
-			case "ini": window.location = "/views/home.html"; ;break;
-			case "exa": window.location = "/views/examenes/modo.html"; ;break;
-			case "rank": window.location = "/views/home.html"; ;break;
-			case "tut": window.location = "/views/tutorias/tutorias.html"; ;break;
-			case "vid": window.location = "/views/videotutoriales/cargarVideo.html"; ;break;
-			case "nos": window.location = "/views/home.html"; ;break;
-			case "cerr": window.location = "/views/registrar/login.html"; ;break;
+			case "ini": window.location = _root+"/views/home.html"; ;break;
+			case "exa": window.location = _root+"/views/examenes/modo.html"; ;break;
+			case "rank": window.location = _root+"/views/home.html"; ;break;
+			case "tut": window.location = _root+"/views/tutorias/tutorias.html"; ;break;
+			case "vid": window.location = _root+"/views/videotutoriales/cargarVideo.html"; ;break;
+			case "nos": window.location = _root+"/views/home.html"; ;break;
+			case "cerr": window.location = _root+"/views/registrar/login.html"; ;break;
 		}
 	})
 
@@ -140,6 +147,7 @@ $(document).ready(function() {
     window.location = "../home.html";
   });
   $(".btn-empezar").on("click", function() {
+	  console.log("Estamas precionando");
     window.location = "views/registrar/login.html";
   });
   $("#btn-register").on("click", function() {
@@ -230,3 +238,5 @@ function myFunction(message) {
     x.className = x.className.replace("show", "");
   }, 3000);
 }
+
+	
