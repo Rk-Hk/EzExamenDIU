@@ -97,7 +97,7 @@ $(document).ready(function () {
     window.location = "ranking_tutores.html";
   });
   $(".mis-pedidos").on("click", function () {
-    window.location = "mis_pedidos.html";
+    window.location = "list_pedidos.html";
   });
 
   $("#tutor-ricardo").on("click", function () {
@@ -224,6 +224,16 @@ $(document).ready(function () {
   $(".volver-mapa").on("click", function () {
     window.location = "mapaUniversidad.html";
   });
+	
+	$("#fst-fecha").datepicker();
+	
+
+$('#basicExample').timepicker();
+	
+	
+	$(".btn-solicitar-tutoria").click(function(){
+		$(".list-pedidos .alert").fadeIn();
+	})
 });
 
 function myFunction(message) {
