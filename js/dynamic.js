@@ -1,11 +1,10 @@
-var _root = "";
 
-function obtenerRuta(){
-	_root = window.location.href.split("/index")[0];
-	console.log(_root);
+function obtenerRuta() {
+  console.log("ruta es :" + localStorage.setItem("root", window.location.href.split("/index")[0]));
 }
 
-$(document).ready(function() {
+
+$(document).ready(function () {
   var estadoSidebar = false;
   var _name = "Israel";
   var _apell = "Ruiz";
@@ -30,34 +29,35 @@ $(document).ready(function() {
   ];
 
   /*RUTAS DE MENU PRINCIPAL*/
-  $(".examen-option").on("click", function() {
+  $(".examen-option").on("click", function () {
     window.location = "examenes/modo.html";
   });
-  $(".ranking-option").on("click", function() {
+  $(".ranking-option").on("click", function () {
     window.location = "ranking/ranking.html"
   });
-  $(".tutoria-option").on("click", function() {
+  $(".tutoria-option").on("click", function () {
     window.location = "tutorias/tutorias.html";
   });
-  $(".video-option").on("click", function() {
+  $(".video-option").on("click", function () {
     window.location = "videotutoriales/videotutoriales.html";
   });
-	
-	/**	RUTAS DEL MENU LATERAL 	**/
-	$(".item-sidebar").click(function(e){
-		switch(e.target.id){
-			case "ini": window.location = _root+"/views/home.html"; ;break;
-			case "exa": window.location = _root+"/views/examenes/modo.html"; ;break;
-			case "rank": window.location = _root+"/views/home.html"; ;break;
-			case "tut": window.location = _root+"/views/tutorias/tutorias.html"; ;break;
-			case "vid": window.location = _root+"/views/videotutoriales/cargarVideo.html"; ;break;
-			case "nos": window.location = _root+"/views/home.html"; ;break;
-			case "cerr": window.location = _root+"/views/registrar/login.html"; ;break;
-		}
-	})
+
+  /**	RUTAS DEL MENU LATERAL 	**/
+  $(".item-sidebar").click(function (e) {
+    var _root = localStorage.getItem("root");
+    switch (e.target.id) {
+      case "ini": window.location = _root + "/views/home.html";; break;
+      case "exa": window.location = _root + "/views/examenes/modo.html";; break;
+      case "rank": window.location = _root + "/views/home.html";; break;
+      case "tut": window.location = _root + "/views/tutorias/tutorias.html";; break;
+      case "vid": window.location = _root + "/views/videotutoriales/cargarVideo.html";; break;
+      case "nos": window.location = _root + "/views/home.html";; break;
+      case "cerr": window.location = _root + "/views/registrar/login.html";; break;
+    }
+  })
 
   /*	RUTA VIDEOTUTORIALES*/
-  $(".item-course").click(function(e) {
+  $(".item-course").click(function (e) {
     switch (e.target.id) {
       case "1":
         curso_selecc = "Algebra";
@@ -92,20 +92,20 @@ $(document).ready(function() {
 
   /*acciones para tutoria*/
 
-  $(".ranking-tutor").on("click", function() {
+  $(".ranking-tutor").on("click", function () {
     atras_ranking = true;
     window.location = "ranking_tutores.html";
   });
-  $(".mis-pedidos").on("click", function() {
+  $(".mis-pedidos").on("click", function () {
     window.location = "mis_pedidos.html";
   });
 
-  $("#tutor-ricardo").on("click", function() {
+  $("#tutor-ricardo").on("click", function () {
     view_tutor = true;
     $(".ranking-lista-body").fadeOut();
     $(".info-tutor").fadeIn();
   });
-  $(".btn-ranking-tutor").on("click", function() {
+  $(".btn-ranking-tutor").on("click", function () {
     if (view_tutor) {
       view_tutor = false;
 
@@ -115,42 +115,42 @@ $(document).ready(function() {
       window.location = "tutorias.html";
     }
   });
-	
-	$(".like").on("click", function(){
-		$(this).attr("src","../../img/like-yes.png");
-	});
-	$(".comment").on("click", function(){
-		$(".content-comment").fadeIn();
-	});
-	
-	$(".btn-comment").on("click", function(){
-		$(".modal").fadeOut();
-	});
-	
+
+  $(".like").on("click", function () {
+    $(this).attr("src", "../../img/like-yes.png");
+  });
+  $(".comment").on("click", function () {
+    $(".content-comment").fadeIn();
+  });
+
+  $(".btn-comment").on("click", function () {
+    $(".modal").fadeOut();
+  });
+
 
   /**lista Temas x curso**/
-  $(".btn-cursos").on("click", function() {
+  $(".btn-cursos").on("click", function () {
     window.location = "videotutoriales.html";
   });
-  $(".btn-temas").on("click", function() {
+  $(".btn-temas").on("click", function () {
     window.location = "temasxCurso.html";
   });
-  $(".tema-1").on("click", function() {
+  $(".tema-1").on("click", function () {
     window.location = "cargarVideo.html";
   });
 
   /**Otras acciones de israel creo :V */
 
-  $(".content-main button").on("click", function() {});
+  $(".content-main button").on("click", function () { });
 
-  $(".btn-volver").on("click", function() {
+  $(".btn-volver").on("click", function () {
     window.location = "../home.html";
   });
-  $(".btn-empezar").on("click", function() {
-	  console.log("Estamas precionando");
+  $(".btn-empezar").on("click", function () {
+    console.log("Estamas precionando");
     window.location = "views/registrar/login.html";
   });
-  $("#btn-register").on("click", function() {
+  $("#btn-register").on("click", function () {
     if (
       $(".register-name").val() == "" ||
       $(".register-apell").val() == "" ||
@@ -166,7 +166,7 @@ $(document).ready(function() {
       myFunction("Registrado con exito");
     }
   });
-  $("#btn-login").on("click", function() {
+  $("#btn-login").on("click", function () {
     if (
       $(".login-email").val() == _email &&
       $(".login-pass").val() == _password
@@ -176,17 +176,17 @@ $(document).ready(function() {
       myFunction("Usuario no registrado");
     }
   });
-  
 
-  $(".item-university").on("click", function() {
+
+  $(".item-university").on("click", function () {
     window.location = "listaExamenes.html";
   });
-  $("#modo-option").on("click", function() {
+  $("#modo-option").on("click", function () {
     window.location = "universidades.html";
   });
-	
-  $(".btn-sidebar").on("click", function() {
-    
+
+  $(".btn-sidebar").on("click", function () {
+
     if (estadoSidebar) {
       $("#sidebar").fadeOut();
       estadoSidebar = !estadoSidebar;
@@ -196,32 +196,32 @@ $(document).ready(function() {
     }
   });
 
-  $(".container-examenes").on("click", function() {
+  $(".container-examenes").on("click", function () {
     $("#sidebar").fadeOut();
   });
-  $("#empezarExamen").on("click", function() {
+  $("#empezarExamen").on("click", function () {
     window.location = "mapaUniversidad.html";
   });
 
-  $(".contenedor").on("click", function() {
+  $(".contenedor").on("click", function () {
     $("#sidebar").fadeOut();
   });
-  $("#empezarExamen").on("click", function() {
+  $("#empezarExamen").on("click", function () {
     window.location = "mapaUniversidad.html";
   });
-  $(".resolver-area").on("click", function() {
+  $(".resolver-area").on("click", function () {
     window.location = "pregunta.html";
   });
-  $(".btn-siguiente").on("click", function() {
+  $(".btn-siguiente").on("click", function () {
     window.location = "terminado.html";
   });
-  $(".btn-back").on("click", function() {
+  $(".btn-back").on("click", function () {
     window.location = "mapaUniversidad.html";
   });
-  $(".volver-home").on("click", function() {
+  $(".volver-home").on("click", function () {
     window.location = "home.html";
   });
-  $(".volver-mapa").on("click", function() {
+  $(".volver-mapa").on("click", function () {
     window.location = "mapaUniversidad.html";
   });
 });
@@ -234,9 +234,9 @@ function myFunction(message) {
   x.className = "show";
 
   // After 3 seconds, remove the show class from DIV
-  setTimeout(function() {
+  setTimeout(function () {
     x.className = x.className.replace("show", "");
   }, 3000);
 }
 
-	
+
