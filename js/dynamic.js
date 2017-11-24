@@ -35,6 +35,19 @@ $(document).ready(function() {
   $(".video-option").on("click", function() {
     window.location = "videotutoriales/videotutoriales.html";
   });
+	
+	/**	RUTAS DEL MENU LATERAL 	**/
+	$(".item-sidebar").click(function(e){
+		switch(e.target.id){
+			case "ini": window.location = "/views/home.html"; ;break;
+			case "exa": window.location = "/views/examenes/modo.html"; ;break;
+			case "rank": window.location = "/views/home.html"; ;break;
+			case "tut": window.location = "/views/tutorias/tutorias.html"; ;break;
+			case "vid": window.location = "/views/videotutoriales/cargarVideo.html"; ;break;
+			case "nos": window.location = "/views/home.html"; ;break;
+			case "cerr": window.location = "/views/registrar/login.html"; ;break;
+		}
+	})
 
   /*	RUTA VIDEOTUTORIALES*/
   $(".item-course").click(function(e) {
@@ -163,6 +176,7 @@ $(document).ready(function() {
   $("#modo-option").on("click", function() {
     window.location = "universidades.html";
   });
+	
   $(".btn-sidebar").on("click", function() {
     
     if (estadoSidebar) {
