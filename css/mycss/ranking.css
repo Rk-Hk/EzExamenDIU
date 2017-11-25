@@ -52,6 +52,7 @@
 .item-usuario .numero{
   color: #5d8e93;
   font-weight: bold;
+  margin-right: 20px;
 }
 
 .item-usuario .cantidad{
@@ -60,6 +61,7 @@
 }
 
 .item-usuario figure{
+  width: 60vw;
   display: flex;
   align-items: center;
 }

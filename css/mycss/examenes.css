@@ -148,6 +148,7 @@ body {
 .container-examenes {
   position: relative;
   padding: 15px;
+  font-size: 1.2rem;
 }
 
 .container-examenes ul{
@@ -172,7 +173,7 @@ label.examen {
   width: 100%;
   border-style: none;
   font-size: 20px;
-  padding: 10px;
+  padding: 15px;
   position: fixed;
   background: #5d8e93;
   color: white;
@@ -231,6 +232,14 @@ label.examen {
   text-transform: capitalize;
 }
 
+.btn-primary{
+  background: #5d8e93;
+}
+
+.btn-secondary{
+  background: rgb(212, 212, 207);
+}
+
 /* PREGUNTA */
 .container-pregunta {
   padding: 10px 20px;
@@ -240,6 +249,7 @@ label.examen {
   justify-content: space-between;
   padding-bottom: 5px;
   border-bottom: 1px solid rgb(184, 175, 175);
+  font-size: 1.3rem;
 }
 
 .marcador-pregunta  p i{
@@ -247,23 +257,29 @@ label.examen {
 }
 
 .pregunta h2{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 10px auto;
 }
 
 .pregunta p{
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .pregunta ul{
   list-style: none;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .item-pregunta{
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 0.9rem;
+}
+
+.item2-pregunta{
+  margin-left: 10px;
+  font-size: 1.1rem;
 }
 
 .btn-decision {
@@ -312,7 +328,7 @@ label.examen {
 }
 
 .items-resultado p{
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding: 7px;
 }
 

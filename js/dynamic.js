@@ -48,7 +48,7 @@ $(document).ready(function () {
     switch (e.target.id) {
       case "ini": window.location = _root + "/views/home.html";; break;
       case "exa": window.location = _root + "/views/examenes/modo.html";; break;
-      case "rank": window.location = _root + "/views/home.html";; break;
+      case "rank": window.location = _root + "/views/ranking/ranking.html";; break;
       case "tut": window.location = _root + "/views/tutorias/tutorias.html";; break;
       case "vid": window.location = _root + "/views/videotutoriales/cargarVideo.html";; break;
       case "nos": window.location = _root + "/views/home.html";; break;
@@ -227,8 +227,12 @@ $(document).ready(function () {
   $(".btn-siguiente").on("click", function () {
     window.location = "terminado.html";
   });
+
+  $(".btn-secondary").on("click", function () {
+    window.location = "../home.html";
+  });
   $(".btn-back").on("click", function () {
-    window.location = "mapaUniversidad.html";
+    window.location = "mapaSM.html";
   });
   $(".volver-home").on("click", function () {
     window.location = "../home.html";
